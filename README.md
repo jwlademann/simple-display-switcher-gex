@@ -1,4 +1,4 @@
-# imple Display Switcher (GNOME Extension)
+# Simple Display Switcher (GNOME Extension)
 
 A simple GNOME Shell extension that switches between display modes using `gdctl`:
 
