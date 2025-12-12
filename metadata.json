@@ -1,0 +1,7 @@
+{
+"uuid": "simple-display-switcher@jwlademann.github.com",
+"name": "Display Switcher",
+"description": "Quickly switch monitor configurations: mirrored, extended, external only, built-in only (GNOME 49 / Wayland)",
+"shell-version": ["49"],
+"version": 1
+}
