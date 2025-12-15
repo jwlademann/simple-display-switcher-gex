@@ -339,7 +339,6 @@ export default class DisplaySwitcherExtension {
             1,
             "right"
         );
-        this._indicator.detectActiveMode();
     }
 
     disable() {
