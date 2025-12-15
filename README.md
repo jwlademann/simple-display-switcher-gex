@@ -1,20 +1,19 @@
-# Simple Display Switcher (GNOME Extension)
+# Simple Display Switcher
 
-A simple GNOME Shell extension that switches between display modes using `gdctl`:
+A GNOME Shell extension that provides a panel menu for quickly switching
+display layouts using `gdctl`.
 
-- **Extend**
-- **External-only**
-- **Built-in only**
-
-Mirror mode has been removed due to gdctl/mutter limitations when monitors differ in resolution.
+## Features
+- Built-in only
+- External only
+- Joined displays (built-in or external primary)
+- Configurable join position (left, right, above, below)
+- Automatic state detection when opening the menu
 
 ## Requirements
-
 - GNOME Shell 45+
-- Wayland session
-- `gdctl` installed (part of newer GNOME/mutter tools)
+- `gdctl` available in PATH (GNOME 45+)
 
-You can test gdctl with:
-
-```bash
-gdctl show
+## Notes
+This extension uses `gdctl` to control display layouts and does not use
+GSettings or Mutter private APIs.
