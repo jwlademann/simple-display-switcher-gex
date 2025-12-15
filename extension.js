@@ -249,8 +249,12 @@ class DisplaySwitcherButton extends PanelMenu.Button {
             this._joinSubMenu.menu.addMenuItem(item);
             this._joinItems[pos] = item;
         });
-
         this._updateJoinChecks();
+        this.menu.connect("open-state-changed", (_menu, isOpen) => {
+            if (isOpen) {
+                this.detectActiveMode();
+            }
+        });
     }
 
     _addModeItem(id, label) {
